@@ -1,0 +1,1651 @@
+/* Imported files */
+@import url(/Users/emran/Desktop/Shahin/Development/2023/DES-1118_PC_Petmate_ChuckIt_BP_9699735360/Petco_Petmate/font.css);
+/* All the common classes that have common styles */
+/* Need to remove the body styles during handoff */
+@import url(/Users/emran/Desktop/Shahin/Development/2023/DES-1118_PC_Petmate_ChuckIt_BP_9699735360/Petco_Petmate/font.css);
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Show hide class */
+.m-hide {
+  display: block;
+  width: 100%;
+}
+
+.d-hide {
+  display: none;
+  width: 100%;
+}
+
+.citrus_petmate {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.citrus_petmate a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.citrus_petmate img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.citrus_petmate h1, .citrus_petmate h2, .citrus_petmate h3 {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  line-height: initial !important;
+  margin: 0;
+}
+
+.citrus_petmate p {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  line-height: initial !important;
+  font-size: 13px;
+  color: #333333;
+  margin: 0;
+}
+
+.citrus_petmate .cta-box {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.citrus_petmate .cta-box a {
+  border-radius: 5px;
+  color: #001952;
+  background: #fff;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  min-width: 209px;
+  margin: 0 15px;
+  height: 54px;
+}
+
+.citrus_petmate .cta-underline {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  cursor: pointer;
+  text-align: left;
+}
+
+.citrus_petmate .cta-underline a {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  cursor: pointer;
+}
+
+.citrus_petmate .cta-all-container {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+}
+
+.citrus_petmate .cta-all-container a {
+  color: #fff;
+}
+
+.citrus_petmate .cta-all-container span {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  padding: 10px;
+}
+
+.citrus_petmate .default-wrap {
+  width: 100%;
+}
+
+.citrus_petmate a:hover .cta-box a:hover {
+  background: #fff;
+  color: #001952;
+  border: 1px solid #001952;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.citrus_petmate a:hover .cta-box a:hover:hover {
+  background: #fff;
+  color: #001952;
+  border: 1px solid #001952;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.citrus_petmate .custom-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.citrus_petmate .container-full {
+  width: 100%;
+}
+
+.citrus_petmate .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.citrus_petmate__section-title {
+  padding: 40px 15px;
+}
+
+.citrus_petmate__section-title h2 {
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: center;
+  font-weight: 700;
+  line-height: initial;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+}
+
+.citrus_petmate__section-title h2 sup {
+  font-size: 16px;
+}
+
+.citrus_petmate__section-title p {
+  font-size: 16px;
+  color: #000000;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.citrus_petmate .section-padding30 {
+  padding: 30px 0;
+}
+
+/* POV sections */
+.citrus_petmate_carousel {
+  overflow-x: hidden;
+  position: relative;
+  display: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-height: 240px;
+}
+
+.citrus_petmate_carousel .citrus_petmate_carousel-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  background: #0785D0;
+}
+
+.citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 240px;
+}
+
+.citrus_petmate_carousel .citrus_petmate_carousel-inner .pov1{
+  background-image: url(new-image/Citrus-Blue-Wilderness-POV-1-bg.jpg);
+}
+.citrus_petmate_carousel .citrus_petmate_carousel-inner .pov2{
+  background-image: url(new-image/Citrus-Blue-Wilderness-POV-2-bg.jpg);
+}
+.citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col:nth-child(1) {
+  width: 20%;
+}
+
+.citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col:nth-child(2) {
+  width: 50%;
+}
+
+.citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col:nth-child(3) {
+  position: relative;
+  width: 30%;
+}
+
+.citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col:nth-child(3) .citrus_petmate__pov--shots img:nth-child(2) {
+  position: absolute;
+  top: 30px;
+  left: -70px;
+  max-width: 350px;
+}
+
+.citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate__pov--text {
+  width: 100%;
+  text-align: left;
+  padding: 0 10px 0 20px;
+}
+
+.citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate__pov--text h1 {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 30px;
+  font-weight: 900;
+  color: #FFFFFF;
+  padding: 15px 0;
+  line-height: 30px;
+}
+
+.citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate__pov--text p {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+.citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate__pov--logo {
+  padding: 0 20px 0 40px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .custom-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.citrus_petmate__pov--cta {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  margin: 0 !important;
+  padding: 0 0 0 20px;
+}
+
+.citrus_petmate__pov--cta a {
+  margin: 0 !important;
+}
+
+.citrus_petmate_carousel-controls .prev {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url("prev.svg");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.citrus_petmate_carousel-controls .next {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url("next.svg");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.prev:hover, .next:hover {
+  opacity: 1;
+}
+
+.citrus_petmate_carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  left: calc(100% / 2 - 52px);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 5px !important;
+}
+
+.citrus_petmate_carousel-indicators span {
+  display: inline-block;
+  border: 2px solid #09205c;
+  padding: 7px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.citrus_petmate_carousel-indicators span.active {
+  background-color: #09205c;
+}
+
+.citrus_petmate__category--wrapper {
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+}
+
+.citrus_petmate__category--wrapper .single-category {
+  display: block;
+  cursor: pointer;
+  width: calc(100%/4);
+  padding: 15px;
+}
+
+.citrus_petmate__category--wrapper .single-category__img {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.citrus_petmate__category--wrapper .single-category h3 {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #001952;
+  font-size: 16px;
+  text-align: center;
+  padding: 40px 15px;
+}
+
+.citrus_petmate__options {
+  margin-bottom: 40px;
+}
+
+.citrus_petmate__options--wrapper {
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  gap: 40px;
+}
+
+.citrus_petmate__options--wrapper .single-options {
+  display: block;
+  cursor: pointer;
+  background: rgba(0, 119, 192, 0.2);
+  width: calc(100%/4);
+}
+
+.citrus_petmate__options--wrapper .single-options h3 {
+  cursor: pointer;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  padding: 40px 15px 0;
+}
+
+.citrus_petmate__options--wrapper .single-options p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px !important;
+  padding: 25px 15px 40px;
+  min-height: 66px;
+}
+
+.citrus-vetdiet-tab-area {
+  overflow: hidden;
+  padding-top: 35px;
+  padding-bottom: 26px;
+}
+
+.citrus-vetdiet-tab-container {
+  max-width: 1246px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.citrus_vetdiet_tab {
+  padding-bottom: 40px;
+}
+
+.citrus_vetdiet_tab_item span {
+  display: block;
+}
+
+.citrus_vetdiet_tab_item {
+  padding: 12px 20px;
+  margin: 0px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  color: #6E6B6B;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+button {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+}
+
+.citrus_vetdiet_tab_item.citrus_vetdiet_tab_item_active {
+  color: #001952;
+  border-bottom: 8px solid #001952;
+  margin-top: 8px;
+}
+
+.citrus-vetdiet-tab__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #021B4E;
+}
+
+.citrus_petmate_splide .splide__arrow svg {
+  fill: #122359;
+}
+
+.citrus_petmate_splide .splide__arrow {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #122359;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  height: 2.2em;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 1;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 2.2em;
+  z-index: 1;
+}
+
+.splide__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.splide__list {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.splide.is-initialized:not(.is-active) .splide__list {
+  display: block;
+}
+
+.splide__pagination {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin: 0;
+  pointer-events: none;
+}
+
+.splide__pagination li {
+  display: inline-block;
+  line-height: 1;
+  list-style-type: none;
+  margin: 0;
+  pointer-events: auto;
+}
+
+.splide:not(.is-overflow) .splide__pagination {
+  display: none;
+}
+
+.splide__progress__bar {
+  width: 0;
+}
+
+.splide {
+  position: relative;
+  visibility: hidden;
+}
+
+.splide.is-initialized,
+.splide.is-rendered {
+  visibility: visible;
+}
+
+.splide__slide {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  list-style-type: none !important;
+  margin: 0;
+  position: relative;
+}
+
+.splide__slide img {
+  vertical-align: bottom;
+}
+
+.splide__spinner {
+  -webkit-animation: splide-loading 1s linear infinite;
+          animation: splide-loading 1s linear infinite;
+  border: 2px solid #999;
+  border-left-color: transparent;
+  border-radius: 50%;
+  bottom: 0;
+  contain: strict;
+  display: inline-block;
+  height: 20px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+}
+
+.splide__sr {
+  clip: rect(0 0 0 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.splide__toggle.is-active .splide__toggle__play,
+.splide__toggle__pause {
+  display: none;
+}
+
+.splide__toggle.is-active .splide__toggle__pause {
+  display: inline;
+}
+
+.splide__track {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+@-webkit-keyframes splide-loading {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes splide-loading {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+.splide__track--draggable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+
+.splide__track--fade > .splide__list > .splide__slide {
+  margin: 0 !important;
+  opacity: 0;
+  z-index: 0;
+}
+
+.splide__track--fade > .splide__list > .splide__slide.is-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.splide--rtl {
+  direction: rtl;
+}
+
+.splide__track--ttb > .splide__list {
+  display: block;
+}
+
+.splide__arrow {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  background: #ccc;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  height: 2em;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  opacity: .7;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 2em;
+  z-index: 1;
+}
+
+.splide__arrow svg {
+  fill: #000;
+  height: 1.2em;
+  width: 1.2em;
+}
+
+.splide__arrow:hover:not(:disabled) {
+  opacity: .9;
+}
+
+.splide__arrow:disabled {
+  opacity: 0;
+}
+
+.splide__arrow:focus-visible {
+  outline: 3px solid #0bf;
+  outline-offset: 3px;
+}
+
+.splide__arrow--prev {
+  left: 1em;
+}
+
+.splide__arrow--prev svg {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.splide__arrow--next {
+  right: 1em;
+}
+
+.splide.is-focus-in .splide__arrow:focus {
+  outline: 3px solid #0bf;
+  outline-offset: 3px;
+}
+
+.splide__pagination {
+  bottom: .5em;
+  left: 0;
+  padding: 0 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.splide__pagination__page {
+  background: #ccc;
+  border: 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  margin: 3px;
+  opacity: .7;
+  padding: 0;
+  position: relative;
+  -webkit-transition: -webkit-transform .2s linear;
+  transition: -webkit-transform .2s linear;
+  transition: transform .2s linear;
+  transition: transform .2s linear, -webkit-transform .2s linear;
+  width: 8px;
+}
+
+.splide__pagination__page.is-active {
+  background: #fff;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  z-index: 1;
+}
+
+.splide__pagination__page:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+
+.splide__pagination__page:focus-visible {
+  outline: 3px solid #0bf;
+  outline-offset: 3px;
+}
+
+.splide.is-focus-in .splide__pagination__page:focus {
+  outline: 3px solid #0bf;
+  outline-offset: 3px;
+}
+
+.splide__progress__bar {
+  background: #ccc;
+  height: 3px;
+}
+
+.splide__slide {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.splide__slide:focus {
+  outline: 0;
+}
+
+@supports (outline-offset: -3px) {
+  .splide__slide:focus-visible {
+    outline: 3px solid #0bf;
+    outline-offset: -3px;
+  }
+}
+
+@media screen and (-ms-high-contrast: none) {
+  .splide__slide:focus-visible {
+    border: 3px solid #0bf;
+  }
+}
+
+@supports (outline-offset: -3px) {
+  .splide.is-focus-in .splide__slide:focus {
+    outline: 3px solid #0bf;
+    outline-offset: -3px;
+  }
+}
+
+@media screen and (-ms-high-contrast: none) {
+  .splide.is-focus-in .splide__slide:focus {
+    border: 3px solid #0bf;
+  }
+  .splide.is-focus-in .splide__track > .splide__list > .splide__slide:focus {
+    border-color: #0bf;
+  }
+}
+
+.splide__toggle {
+  cursor: pointer;
+}
+
+.splide__toggle:focus-visible {
+  outline: 3px solid #0bf;
+  outline-offset: 3px;
+}
+
+.splide.is-focus-in .splide__toggle:focus {
+  outline: 3px solid #0bf;
+  outline-offset: 3px;
+}
+
+.splide__track--nav > .splide__list > .splide__slide {
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.splide__track--nav > .splide__list > .splide__slide.is-active {
+  border: 3px solid #000;
+}
+
+.splide__arrows--rtl .splide__arrow--prev {
+  left: auto;
+  right: 1em;
+}
+
+.splide__arrows--rtl .splide__arrow--prev svg {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.splide__arrows--rtl .splide__arrow--next {
+  left: 1em;
+  right: auto;
+}
+
+.splide__arrows--rtl .splide__arrow--next svg {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.splide__arrows--ttb .splide__arrow {
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.splide__arrows--ttb .splide__arrow--prev {
+  top: 1em;
+}
+
+.splide__arrows--ttb .splide__arrow--prev svg {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.splide__arrows--ttb .splide__arrow--next {
+  bottom: 1em;
+  top: auto;
+}
+
+.splide__arrows--ttb .splide__arrow--next svg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.splide__pagination--ttb {
+  bottom: 0;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  left: auto;
+  padding: 1em 0;
+  right: .5em;
+  top: 0;
+}
+
+.citrus-vetdiet-cta-box-tab {
+  min-width: 211px;
+  border-radius: 0.25rem;
+  background-color: #001952;
+  padding: 1rem 0;
+  text-align: center;
+  color: #fff;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  border: 1px solid #001952;
+}
+
+.citrus-vetdiet-cta-box-tab:hover {
+  color: #001952 !important;
+  background: #fff;
+  border: 1px solid #001952;
+}
+
+/* Products Tabs */
+.citrus-vetdiet-main-tab-content {
+  padding: 0 1rem;
+}
+
+.citrus-vetdiet-tab-area {
+  overflow: hidden;
+  padding-top: 35px;
+  padding-bottom: 26px;
+}
+
+.citrus-vetdiet-tab-container {
+  max-width: 1246px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.citrus_vetdiet_dog_tab_item.citrusTabshow {
+  display: block;
+}
+
+.citrus_vetdiet_dog_tab_item {
+  display: none;
+}
+
+.citrus_vetdiet_tab {
+  padding-bottom: 40px;
+}
+
+.citrus_vetdiet_tab_item span {
+  display: block;
+}
+
+.citrus_vetdiet_tab_btn_single,
+.citrus_vetdiet_tab_btn2_single {
+  text-transform: uppercase;
+  padding: 0 20px 12px;
+  margin: 0px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #6E6B6B;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  background: transparent;
+  border: none;
+  border-bottom: 8px solid #fff;
+}
+
+button {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+}
+
+.citrus_vetdiet_tab_btn_single.citrus_vetdiet_tab_btn_single_active,
+.citrus_vetdiet_tab_btn2_single.citrus_vetdiet_tab_btn2_single_active {
+  color: #001952;
+  border-bottom: 8px solid #001952;
+  border-radius: unset;
+}
+
+.citrus-vetdiet-tab__btn,
+.citrus-vetdiet-tab__btn2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #021B4E;
+}
+
+.citrus_petmate_splide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.citrus_vetdiet_tab_item .single-tab-text {
+  text-align: left;
+}
+
+.citrus_vetdiet_tab_item .single-tab-text p {
+  font-size: 13px;
+  line-height: 18px !important;
+  padding: 20px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 1em;
+  margin-bottom: 24px;
+}
+
+.citrus-inner-img22 {
+  padding: 0 15px;
+}
+
+.citrus-inner-img22 > a img {
+  width: 100%;
+  height: auto;
+}
+
+.citrus_vetdiet_tab_item.citrus_row_opacity_0 {
+  opacity: 0;
+}
+
+.citrus_petmate_splide .splide__pagination {
+  display: none;
+}
+
+.citrus-meet-tab-product > a {
+  color: #001952;
+  font-size: 16px;
+  display: block;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  text-decoration: underline;
+}
+
+.citrus_petmate_splide .splide__arrow--next {
+  right: 0px;
+}
+
+.citrus_petmate_splide .splide__arrow--prev {
+  left: 2px;
+}
+
+.citrus_petmate_splide .splide__arrow svg {
+  fill: #122359;
+}
+
+.citrus_petmate_splide .splide__arrow {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #122359;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  height: 2.2em;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 1;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 2.2em;
+  z-index: 1;
+}
+
+.citrus_petmate_splide .splide__arrow--prev {
+  left: 0;
+}
+
+/* custom css */
+.splide__arrow:disabled {
+  opacity: 0;
+}
+
+/* Imported files */
+/* All the common classes that have common styles */
+/* Need to remove the body styles during handoff */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Show hide class */
+.m-hide {
+  display: block;
+  width: 100%;
+}
+
+.d-hide {
+  display: none;
+  width: 100%;
+}
+
+.citrus_petmate {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.citrus_petmate a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.citrus_petmate img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.citrus_petmate h1, .citrus_petmate h2, .citrus_petmate h3 {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  line-height: initial !important;
+  margin: 0;
+}
+
+.citrus_petmate p {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  line-height: initial !important;
+  font-size: 13px;
+  color: #333333;
+  margin: 0;
+}
+
+.citrus_petmate .cta-box {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.citrus_petmate .cta-box a {
+  border-radius: 5px;
+  color: #001952;
+  background: #fff;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  min-width: 209px;
+  margin: 0 15px;
+  height: 54px;
+}
+
+.citrus_petmate .cta-underline {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  cursor: pointer;
+  text-align: left;
+}
+
+.citrus_petmate .cta-underline a {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  cursor: pointer;
+}
+
+.citrus_petmate .cta-all-container {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+}
+
+.citrus_petmate .cta-all-container a {
+  color: #fff;
+}
+
+.citrus_petmate .cta-all-container span {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  padding: 10px;
+}
+
+.citrus_petmate .default-wrap {
+  width: 100%;
+}
+
+.citrus_petmate a:hover .cta-box a:hover {
+  background: #fff;
+  color: #001952;
+  border: 1px solid #001952;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.citrus_petmate a:hover .cta-box a:hover:hover {
+  background: #fff;
+  color: #001952;
+  border: 1px solid #001952;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.citrus_petmate .custom-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.citrus_petmate .container-full {
+  width: 100%;
+}
+
+.citrus_petmate .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.citrus_petmate__section-title {
+  padding: 40px 15px;
+}
+
+.citrus_petmate__section-title h2 {
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: center;
+  font-weight: 700;
+  line-height: initial;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+}
+
+.citrus_petmate__section-title h2 sup {
+  font-size: 16px;
+}
+
+.citrus_petmate__section-title p {
+  font-size: 16px;
+  color: #000000;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.citrus_petmate .section-padding30 {
+  padding: 30px 0;
+}
+
+.citrus_petmate__two_col {
+  padding: 0 20px 40px;
+  overflow: hidden;
+}
+
+.citrus_petmate__two_col--wrapper {
+  gap: 40px;
+}
+
+.citrus_petmate__two_col--wrapper .single-col {
+  width: calc(100%/2);
+}
+
+.citrus_petmate__two_col--wrapper .single-col__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.citrus_petmate__two_col--wrapper .single-col__txt {
+  text-align: center;
+  padding: 50px 15px;
+  background: rgba(0, 119, 192, 0.2);
+}
+
+.citrus_petmate__two_col--wrapper .single-col__txt h3 {
+  font-size: 20px;
+  color: #000000;
+}
+
+.citrus_petmate__two_col--wrapper .single-col__txt p {
+  font-size: 16px;
+  padding: 25px 0;
+}
+
+.citrus_petmate__two_col--wrapper .single-col__txt p sup {
+  font-size: 10px;
+}
+
+.citrus_petmate__two_col--wrapper .single-col__txt .cta-underline {
+  text-align: center;
+}
+
+.citrus_petmate__two_col--wrapper .single-col__container--items {
+  width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.citrus_petmate__two_col--wrapper .single-col__container--items .items_wrapper__img {
+  max-width: 190px;
+  margin: 0 auto;
+}
+
+.citrus_petmate__two_col--wrapper .single-col__container--items .items_wrapper__txt {
+  text-align: left;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.citrus_petmate__two_col--wrapper .single-col__container--items .items_wrapper__txt p {
+  font-size: 14px;
+  padding: 20px 0;
+  min-height: 40px;
+}
+
+.citrus_petmate__two_col--wrapper .single-col__container--items .items_wrapper__txt .cta-underline a {
+  color: #001952;
+}
+
+/* Laptop */
+/* Laptop */
+/* Laptop */
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+  .citrus_petmate .cta-box a {
+    padding: 17px 0;
+    min-width: 209px;
+    max-width: 209px;
+    height: 54px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* Medium devices */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate__pov--text h1 {
+    font-size: 24px;
+    padding: 10px 0;
+    line-height: 28px !important;
+  }
+  .citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate__pov--text p {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+  .citrus_petmate__pov--logo {
+    max-width: 100px;
+  }
+}
+
+/* Tab devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .citrus_petmate_carousel .citrus_petmate_carousel-inner {
+    min-height: auto;
+  }
+  .citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col:nth-child(2) {
+    width: 40%;
+  }
+  .citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col:nth-child(3) {
+    width: 40%;
+  }
+  .citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col:nth-child(3) .citrus_petmate__pov--shots img:nth-child(2) {
+    position: absolute;
+    top: 30px;
+    max-width: 200px;
+    left: -35px;
+  }
+  .citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate__pov--text h1 {
+    font-size: 19px;
+    padding: 0 0 10px;
+    line-height: 21px !important;
+  }
+  .citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate__pov--text p {
+    font-size: 13px;
+    padding-bottom: 10px;
+    line-height: 15px;
+  }
+  .citrus_petmate_carousel .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate__pov--cta a {
+    height: 44px;
+  }
+  .citrus_petmate_carousel .citrus_petmate_carousel-inner .pov1 .citrus_petmate_carousel-item__col:nth-child(2) .citrus_petmate__pov--text p {
+    max-width: 220px;
+  }
+  .citrus_petmate__pov--logo {
+    max-width: 90px;
+    padding-top: 10px;
+  }
+  .citrus_petmate_carousel-indicators {
+    display: none;
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+  /* Show hide class */
+  .m-hide {
+    display: none;
+  }
+  .d-hide {
+    display: block;
+  }
+  .citrus_petmate .cta-box a {
+    background: none !important;
+    color: #00205B;
+    text-transform: capitalize;
+    text-decoration: underline !important;
+    border: none;
+  }
+  .citrus_petmate .cta-all-container a {
+    background: none;
+    color: #00205B;
+    text-transform: capitalize;
+    text-decoration: underline !important;
+    border: none;
+  }
+  .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col:nth-child(2) {
+    width: 60% !important;
+  }
+  .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col:nth-child(3) {
+    width: 40% !important;
+  }
+  .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col:nth-child(3) .citrus_petmate__pov--shots img:nth-child(2) {
+    left: -10px !important;
+  }
+  .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col .citrus_petmate__pov--cta {
+    padding: 10px 0 0 15px;
+  }
+  .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col .citrus_petmate__pov--cta a {
+    color: #000000 !important;
+    border: none !important;
+    min-width: auto;
+    margin: 0 15px;
+    padding: 0;
+    height: initial;
+  }
+  .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col .citrus_petmate__pov--text {
+    padding: 0;
+  }
+  .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col .citrus_petmate__pov--text h1, .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col .citrus_petmate__pov--text p {
+    max-width: 350px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 0;
+  }
+  .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col .citrus_petmate__pov--text h1 {
+    font-size: 21px;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col .citrus_petmate__pov--text p {
+    padding-bottom: 0;
+    font-size: 14px;
+  }
+  .citrus_petmate_carousel-inner .citrus_petmate__pov--logo {
+    padding: 0px 0 0 10px !important;
+    margin: 0 !important;
+    max-width: 80% !important;
+  }
+  .citrus_petmate__category {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .citrus_petmate__category::-webkit-scrollbar {
+    display: none;
+  }
+  .citrus_petmate__category--wrapper {
+    width: 170%;
+    overflow-x: auto;
+  }
+  .citrus_petmate__category--wrapper .single-category {
+    width: 60%;
+  }
+  .citrus_petmate__options {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .citrus_petmate__options::-webkit-scrollbar {
+    display: none;
+  }
+  .citrus_petmate__options--wrapper {
+    width: 270%;
+    overflow-x: auto;
+  }
+  .citrus_petmate__options--wrapper .single-options {
+    width: 60%;
+  }
+  .citrus_petmate__two_col--wrapper {
+    gap: 40px;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .citrus_petmate__two_col--wrapper .feature-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .citrus_petmate__two_col--wrapper .feature-img .single-col__img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .citrus_petmate__two_col--wrapper .feature-img .single-col__txt {
+    padding: 20px 15px;
+    width: 100%;
+  }
+  .citrus_petmate__two_col--wrapper .feature-img .single-col__txt p {
+    padding: 20px 0;
+  }
+  .citrus_petmate__two_col--wrapper .single-col {
+    width: 100%;
+  }
+  .citrus_petmate__two_col--wrapper .single-col__container {
+    width: 220%;
+  }
+  .citrus_petmate__two_col--wrapper .single-col__container--items {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 40px;
+  }
+  .citrus_petmate__two_col--wrapper .single-col__container--items .items_wrapper {
+    width: 60%;
+  }
+  .citrus_petmate__two_col--wrapper .single-col__container--items .items_wrapper__img {
+    max-width: 190px;
+    margin: 0 auto;
+  }
+  .citrus_petmate__two_col--wrapper .single-col__container--items .items_wrapper__txt {
+    text-align: left;
+    max-width: 100%;
+  }
+  .citrus_petmate__two_col--wrapper .single-col__container--items .items_wrapper__txt p {
+    font-size: 14px;
+    padding: 20px 0;
+  }
+  .citrus_petmate__two_col--wrapper .single-col .citrus_petmate_splide .splide__arrow {
+    display: none;
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 320px) {
+  .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col .citrus_petmate__pov--cta {
+    padding: 10px 0 0 10px;
+  }
+  .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col .citrus_petmate__pov--cta a {
+    color: #000000 !important;
+    border: none !important;
+    min-width: auto;
+    margin: 0 15px;
+    padding: 0;
+    height: initial;
+  }
+  .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col .citrus_petmate__pov--text h1 {
+    font-size: 18px;
+  }
+  .citrus_petmate_carousel-inner .citrus_petmate_carousel-item .citrus_petmate_carousel-item__col .citrus_petmate__pov--text p {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=base.css.map */

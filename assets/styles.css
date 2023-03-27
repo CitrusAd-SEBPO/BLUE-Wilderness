@@ -1,0 +1,38 @@
+/* font face add */
+/*
+ * Legal Disclaimer
+ *
+ * These web fonts are licensed exclusively for use on the following:
+ * All domains belonging to Petco
+ *
+ * It is strictly forbidden to download or use these fonts on any other website domain or media.
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Lineto.com, 2020
+ */
+
+@font-face {
+  font-family: PetcoCircularTT-Regular;
+  src: url(assets/fonts/PetcoCircularTT-Regular.woff2) format("woff2"),
+    url(assets/fonts/PetcoCircularTT-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: PetcoCircularTT-Bold;
+  src: url(assets/fonts/PetcoCircularTT-Bold.woff2) format("woff2"),
+    url(/assets/fonts/PetcoCircularTT-Bold.woff) format("woff");
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* universal styles */
+.citrusBlue__wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+}
