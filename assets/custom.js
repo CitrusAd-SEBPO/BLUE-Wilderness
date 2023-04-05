@@ -1,22 +1,168 @@
+// classic product carousel
+var splides = document.querySelectorAll(".citrus_blue_splide-classic");
+if (splides.length) {
+  for (var i = 0; i < splides.length; i++) {
+    var splideElement = splides[i];
+    var splideDefaultOptions = {
+      type: "slide",
+      autoplay: false,
+      rewindSpeed: 500,
+      speed: 500,
+      pauseOnHover: true,
+      perPage: 2,
+      perMove: 1,
+      start: 0,
+      focus: 0,
+      pagination: false,
+      omitEnd: true,
+    };
+
+    new Splide(splideElement, splideDefaultOptions).mount();
+  }
+}
+var splidesPremier = document.querySelectorAll(".citrus_blue_splide-premier");
+if (splidesPremier.length) {
+  for (var i = 0; i < splidesPremier.length; i++) {
+    var splideElement = splidesPremier[i];
+    var splideDefaultOptions = {
+      type: "slide",
+      autoplay: false,
+      rewindSpeed: 500,
+      speed: 500,
+      pauseOnHover: true,
+      perPage: 2,
+      perMove: 1,
+      start: 0,
+      focus: 0,
+      pagination: false,
+      omitEnd: true,
+    };
+
+    new Splide(splideElement, splideDefaultOptions).mount();
+  }
+}
+/**----------------------
+ * product scroller js ---
+ --------------------------*/
+// tab carousal js
+// initialize product scroller
+advanceArrows("blue-DryFood-product");
+function advanceArrows(idx) {
+  var splideElement = "#" + idx;
+  var splideDefaultOptions = {
+    arrows: true,
+    type: "slide",
+    start: 0,
+    focus: 0,
+    pagination: false,
+    rewindSpeed: 500,
+    speed: 500,
+    pauseOnHover: true,
+    perPage: 6,
+    perMove: 1,
+    omitEnd: true,
+    breakpoints: {
+      375: {
+        perPage: 1,
+      },
+      576: {
+        perPage: 2,
+      },
+      991: {
+        perPage: 3,
+      },
+      992: {
+        perPage: 3,
+      },
+      1024: {
+        perPage: 4,
+      },
+      1200: {
+        perPage: 6,
+      },
+      1440: {
+        perPage: 6,
+      },
+    },
+  };
+  new Splide(splideElement, splideDefaultOptions).mount();
+}
+
+/* ************************************************************************************** */
+//for tab sweater & loader added
+document.addEventListener("DOMContentLoaded", function () {
+  filterProducts("blue-DryFood-product");
+});
+// for dog filter function
+function filterProducts(c) {
+  var x, i;
+  x = document.getElementsByClassName("citrusBlue__Product");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "citrusTabShow");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], " citrusTabShow");
+  }
+  advanceArrows(c);
+}
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+document.addEventListener("DOMContentLoaded", function () {
+  // for dog active class filter
+  var dogBtnContainer = document.getElementById("citrusBlueTabId");
+  var dogBtns = dogBtnContainer.getElementsByClassName("citrusBlue__tab_item");
+  addActiveClass(dogBtns, "citrusBlue__active_tab");
+});
+function addActiveClass(element, activeClass) {
+  for (var i = 0; i < element.length; i++) {
+    element[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName(activeClass);
+      current[0].className = current[0].className.replace(
+        " " + activeClass,
+        ""
+      );
+      this.className += " " + activeClass;
+    });
+  }
+}
+//for Dog best seller tab switcher
+
 {
   /*-------------------------*
  custom coded hero slider 
  *---------------------------*/
 }
 
-let citrus_blue_carousel = document.querySelector(".citrus_blue_carousel");
+let citrusBlue_carousel = document.querySelector(".citrusBlue_carousel");
 
-let citrus_blue_carouselInner = document.querySelector(
-  ".citrus_blue_carousel-inner"
-);
+let citrusBlue_carouselInner = document.querySelector(".citrusBlue_carousel-inner");
 
-let prev = document.querySelector(".citrus_blue_carousel-controls .prev");
+let prev = document.querySelector(".citrusBlue_carousel-controls .prev");
 
-let next = document.querySelector(".citrus_blue_carousel-controls .next");
+let next = document.querySelector(".citrusBlue_carousel-controls .next");
 
-let slides = document.querySelectorAll(
-  ".citrus_blue_carousel-inner .citrus_blue_carousel-item"
-);
+let slides = document.querySelectorAll(".citrusBlue_carousel-inner .citrusBlue_carousel-item");
 
 let totalSlides = slides.length;
 
@@ -34,12 +180,12 @@ let interval = 5000;
 
 let time;
 
-//Init citrus_blue_carousel
-citrus_blue_carouselInner.style.minWidth = totalSlides * 100 + "%";
+//Init citrusBlue_carousel
+citrusBlue_carouselInner.style.minWidth = totalSlides * 100 + "%";
 loadIndicators();
 loop(true);
 
-//citrus_blue_carousel events
+//citrusBlue_carousel events
 
 next.addEventListener("click", () => {
   slideToNext();
@@ -49,54 +195,54 @@ prev.addEventListener("click", () => {
   slideToPrev();
 });
 
-citrus_blue_carouselInner.addEventListener("transitionend", () => {
+citrusBlue_carouselInner.addEventListener("transitionend", () => {
   if (direction === -1) {
     if (jump > 1) {
       for (let i = 0; i < jump; i++) {
         activeSlide++;
-        citrus_blue_carouselInner.append(
-          citrus_blue_carouselInner.firstElementChild
+        citrusBlue_carouselInner.append(
+          citrusBlue_carouselInner.firstElementChild
         );
       }
     } else {
       activeSlide++;
-      citrus_blue_carouselInner.append(
-        citrus_blue_carouselInner.firstElementChild
+      citrusBlue_carouselInner.append(
+        citrusBlue_carouselInner.firstElementChild
       );
     }
   } else if (direction === 1) {
     if (jump > 1) {
       for (let i = 0; i < jump; i++) {
         activeSlide--;
-        citrus_blue_carouselInner.prepend(
-          citrus_blue_carouselInner.lastElementChild
+        citrusBlue_carouselInner.prepend(
+          citrusBlue_carouselInner.lastElementChild
         );
       }
     } else {
       activeSlide--;
-      citrus_blue_carouselInner.prepend(
-        citrus_blue_carouselInner.lastElementChild
+      citrusBlue_carouselInner.prepend(
+        citrusBlue_carouselInner.lastElementChild
       );
     }
   }
 
-  citrus_blue_carouselInner.style.transition = "none";
-  citrus_blue_carouselInner.style.transform = "translateX(0%)";
+  citrusBlue_carouselInner.style.transition = "none";
+  citrusBlue_carouselInner.style.transform = "translateX(0%)";
   setTimeout(() => {
     jump = 1;
-    citrus_blue_carouselInner.style.transition = "all ease .5s";
+    citrusBlue_carouselInner.style.transition = "all ease .5s";
   });
   updateIndicators();
 });
 
 document
-  .querySelectorAll(".citrus_blue_carousel-indicators span")
+  .querySelectorAll(".citrusBlue_carousel-indicators span")
   .forEach((item) => {
     item.addEventListener("click", (e) => {
       let slideTo = parseInt(e.target.dataset.slideTo);
 
       let indicators = document.querySelectorAll(
-        ".citrus_blue_carousel-indicators span"
+        ".citrusBlue_carousel-indicators span"
       );
 
       indicators.forEach((item, index) => {
@@ -123,26 +269,22 @@ document
     });
   });
 
-citrus_blue_carousel.addEventListener("mouseover", () => {
+citrusBlue_carousel.addEventListener("mouseover", () => {
   loop(false);
 });
 
-citrus_blue_carousel.addEventListener("mouseout", () => {
+citrusBlue_carousel.addEventListener("mouseout", () => {
   loop(true);
 });
 
-//citrus_blue_carousel functions
+//citrusBlue_carousel functions
 
 function loadIndicators() {
   slides.forEach((slide, index) => {
     if (index === 0) {
-      document.querySelector(
-        ".citrus_blue_carousel-indicators"
-      ).innerHTML += `<span data-slide-to="${index}" class="active"></span>`;
+      document.querySelector(".citrusBlue_carousel-indicators").innerHTML += `<span data-slide-to="${index}" class="active"></span>`;
     } else {
-      document.querySelector(
-        ".citrus_blue_carousel-indicators"
-      ).innerHTML += `<span data-slide-to="${index}"></span>`;
+      document.querySelector(".citrusBlue_carousel-indicators").innerHTML += `<span data-slide-to="${index}"></span>`;
     }
   });
 }
@@ -154,34 +296,30 @@ function updateIndicators() {
     activeSlide = totalSlides - 1;
   }
   document
-    .querySelector(".citrus_blue_carousel-indicators span.active")
+    .querySelector(".citrusBlue_carousel-indicators span.active")
     .classList.remove("active");
   document
-    .querySelectorAll(".citrus_blue_carousel-indicators span")
+    .querySelectorAll(".citrusBlue_carousel-indicators span")
     [activeSlide].classList.add("active");
 }
 
 function slideToNext() {
   if (direction === 1) {
     direction = -1;
-    citrus_blue_carouselInner.prepend(
-      citrus_blue_carouselInner.lastElementChild
-    );
+    citrusBlue_carouselInner.prepend(citrusBlue_carouselInner.lastElementChild);
   }
 
-  citrus_blue_carousel.style.justifyContent = "flex-start";
-  citrus_blue_carouselInner.style.transform = `translateX(-${step}%)`;
+  citrusBlue_carousel.style.justifyContent = "flex-start";
+  citrusBlue_carouselInner.style.transform = `translateX(-${step}%)`;
 }
 
 function slideToPrev() {
   if (direction === -1) {
     direction = 1;
-    citrus_blue_carouselInner.append(
-      citrus_blue_carouselInner.firstElementChild
-    );
+    citrusBlue_carouselInner.append(citrusBlue_carouselInner.firstElementChild);
   }
-  citrus_blue_carousel.style.justifyContent = "flex-end";
-  citrus_blue_carouselInner.style.transform = `translateX(${step}%)`;
+  citrusBlue_carousel.style.justifyContent = "flex-end";
+  citrusBlue_carouselInner.style.transform = `translateX(${step}%)`;
 }
 
 function loop(status) {
@@ -195,7 +333,7 @@ function loop(status) {
 }
 // pov loader add. before full load js pov none.
 document.addEventListener("DOMContentLoaded", function () {
-  citrus_blue_carousel.style.display = "flex";
+  citrusBlue_carousel.style.display = "flex";
 });
 
 {
