@@ -102,7 +102,8 @@
 
         <!-- category section start -->
         <section id="citrusBlue__RawCategory">
-            <h2 class="citrusBlue__sectionTitle">Natural recipes with real meat first</h2>
+            <h2 class="citrusBlue__sectionTitle">Natural recipes with real <br class="citrusBlue__mobile-version" />meat
+                first</h2>
             <div class="citrusBlue__RawCategoryContainer">
                 <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
                     <div class="citrusBlue__category">
@@ -142,7 +143,7 @@
         <!-- classic product section -->
         <section class="citrusBlue__classic">
             <div class="citrusBlue__classicContainer">
-                <div class="citrusBlue__Row">
+                <div class="citrusBlue__Row classicRow">
                     <div class="citrusBlue__twoCol">
                         <!-- classic product -->
                         <div class="splide citrus_blue_splide-classic">
@@ -372,7 +373,8 @@
                     <div class="citrusBlue__twoCol">
                         <!-- feature banner -->
                         <div class="citrusBlue__feature-wrap">
-                            <img src="assets/images/Blue-classic-feature-banners.png" alt="">
+                            <img src="assets/images/Blue-classic-feature-banners.png"
+                                alt="Raw chicken, steak and salmon with piles of grains all laid out on a rock">
                             <div class="citrusBlue__featureText">
                                 <h3 class="citrusBlue__featureTitle">Classic recipes</h3>
                                 <p>The original BLUE Wilderness formula comes in a variety of delicious recipes for
@@ -387,13 +389,17 @@
         <!-- End classic product section -->
 
         <!-- premier blend product section  -->
-        <section class="citrusBlue__classic">
+        <section class="citrusBlue__classic citrus__premier">
             <div class="citrusBlue__classicContainer">
                 <div class="citrusBlue__Row">
                     <div class="citrusBlue__twoCol">
                         <!-- feature banner -->
                         <div class="citrusBlue__feature-wrap">
-                            <img src="assets/images/Blue-premier-feature-banners.jpg"
+                            <img class="citrusBlue__desktop-version"
+                                src="assets/images/Blue-premier-feature-banners.jpg"
+                                alt="A closeup of the Premier Blend formula. A nutrient-dense diet with Tender Meaty Cuts and Antioxidant-Rich LifeSource Bits.">
+                            <img class="citrusBlue__mobile-version"
+                                src="assets/images/Blue-premier-feature-banners-mobile.jpg"
                                 alt="A closeup of the Premier Blend formula. A nutrient-dense diet with Tender Meaty Cuts and Antioxidant-Rich LifeSource Bits.">
                             <div class="citrusBlue__featureText">
                                 <h3 class="citrusBlue__featureTitle">New Premier Blend</h3>
@@ -549,9 +555,10 @@
                     <!-- tab button -->
                     <div class="citrusBlue__productCarousal-wrapper">
                         <div id="citrusBlueTabId" class="citrusBlueTabId">
+                            <button class="citrusBlue__tab_item" onclick="filterProducts('blue-DryFood-product')">DRY
+                                FOOD</button>
                             <button class="citrusBlue__tab_item citrusBlue__active_tab"
-                                onclick="filterProducts('blue-DryFood-product')">DRY FOOD</button>
-                            <button class="citrusBlue__tab_item" onclick="filterProducts('blue-WetFood-product')">WET
+                                onclick="filterProducts('blue-WetFood-product')">WET
                                 FOOD</button>
                             <button class="citrusBlue__tab_item"
                                 onclick="filterProducts('blue-TreatsFood-product')">TREATS</button>

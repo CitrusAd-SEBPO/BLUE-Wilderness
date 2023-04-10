@@ -15,6 +15,29 @@ if (splides.length) {
       focus: 0,
       pagination: false,
       omitEnd: true,
+      breakpoints: {
+        375: {
+          perPage: 1,
+        },
+        576: {
+          perPage: 1,
+        },
+        991: {
+          perPage: 2,
+        },
+        992: {
+          perPage: 2,
+        },
+        1024: {
+          perPage: 2,
+        },
+        1200: {
+          perPage: 2,
+        },
+        1440: {
+          perPage: 2,
+        },
+      },
     };
 
     new Splide(splideElement, splideDefaultOptions).mount();
@@ -36,6 +59,29 @@ if (splidesPremier.length) {
       focus: 0,
       pagination: false,
       omitEnd: true,
+      breakpoints: {
+        375: {
+          perPage: 1,
+        },
+        576: {
+          perPage: 1,
+        },
+        991: {
+          perPage: 2,
+        },
+        992: {
+          perPage: 2,
+        },
+        1024: {
+          perPage: 2,
+        },
+        1200: {
+          perPage: 2,
+        },
+        1440: {
+          perPage: 2,
+        },
+      },
     };
 
     new Splide(splideElement, splideDefaultOptions).mount();
@@ -46,7 +92,7 @@ if (splidesPremier.length) {
  --------------------------*/
 // tab carousal js
 // initialize product scroller
-advanceArrows("blue-DryFood-product");
+advanceArrows("blue-WetFood-product");
 function advanceArrows(idx) {
   var splideElement = "#" + idx;
   var splideDefaultOptions = {
@@ -66,7 +112,7 @@ function advanceArrows(idx) {
         perPage: 1,
       },
       576: {
-        perPage: 2,
+        perPage: 1,
       },
       991: {
         perPage: 3,
@@ -75,7 +121,7 @@ function advanceArrows(idx) {
         perPage: 3,
       },
       1024: {
-        perPage: 4,
+        perPage: 6,
       },
       1200: {
         perPage: 6,
@@ -91,7 +137,7 @@ function advanceArrows(idx) {
 /* ************************************************************************************** */
 //for tab sweater & loader added
 document.addEventListener("DOMContentLoaded", function () {
-  filterProducts("blue-DryFood-product");
+  filterProducts("blue-WetFood-product");
 });
 // for dog filter function
 function filterProducts(c) {
@@ -156,13 +202,17 @@ function addActiveClass(element, activeClass) {
 
 let citrusBlue_carousel = document.querySelector(".citrusBlue_carousel");
 
-let citrusBlue_carouselInner = document.querySelector(".citrusBlue_carousel-inner");
+let citrusBlue_carouselInner = document.querySelector(
+  ".citrusBlue_carousel-inner"
+);
 
 let prev = document.querySelector(".citrusBlue_carousel-controls .prev");
 
 let next = document.querySelector(".citrusBlue_carousel-controls .next");
 
-let slides = document.querySelectorAll(".citrusBlue_carousel-inner .citrusBlue_carousel-item");
+let slides = document.querySelectorAll(
+  ".citrusBlue_carousel-inner .citrusBlue_carousel-item"
+);
 
 let totalSlides = slides.length;
 
@@ -282,9 +332,13 @@ citrusBlue_carousel.addEventListener("mouseout", () => {
 function loadIndicators() {
   slides.forEach((slide, index) => {
     if (index === 0) {
-      document.querySelector(".citrusBlue_carousel-indicators").innerHTML += `<span data-slide-to="${index}" class="active"></span>`;
+      document.querySelector(
+        ".citrusBlue_carousel-indicators"
+      ).innerHTML += `<span data-slide-to="${index}" class="active"></span>`;
     } else {
-      document.querySelector(".citrusBlue_carousel-indicators").innerHTML += `<span data-slide-to="${index}"></span>`;
+      document.querySelector(
+        ".citrusBlue_carousel-indicators"
+      ).innerHTML += `<span data-slide-to="${index}"></span>`;
     }
   });
 }
