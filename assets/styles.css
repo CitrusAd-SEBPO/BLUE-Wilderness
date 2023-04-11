@@ -371,7 +371,12 @@ p {
   -webkit-box-orient: vertical;
   max-height: 4em; /*standard size is 4em*/
 }
-.cta-underline a {
+.cta-underline a,
+.cta-underline button {
+  border: 0;
+  margin: 0;
+  padding-left: 0;
+  background: none;
   font-family: "PetcoCircularTT-Bold", arial !important;
   font-weight: 900;
   font-size: 16px;
@@ -379,6 +384,7 @@ p {
   text-decoration: underline;
   color: #001952;
   text-align: left;
+  cursor: pointer;
 }
 /* END feature section product container styling */
 
@@ -480,13 +486,17 @@ p {
   -webkit-box-orient: vertical;
   max-height: 4em; /*standard size is 4em*/
 }
-a.citrusBlue__productCTA {
+.citrusBlue__productCTA {
+  border: 0;
+  padding-left: 0;
+  background: none;
   text-decoration: underline;
   font-family: "PetcoCircularTT-Bold", arial !important;
   color: #001952;
   font-size: 16px;
   line-height: 22px;
-  font-weight: bold;
+  font-weight: 900;
+  cursor: pointer;
 }
 .citrusBlue__Products,
 .citrusBlue__Products {
@@ -693,9 +703,6 @@ button {
   }
   .splide__arrows {
     display: none;
-  }
-  a.citrusBlue__productCTA {
-    text-decoration: underline !important;
   }
   /* product section */
   .citrusBlueTabId {
