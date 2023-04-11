@@ -190,6 +190,31 @@ p {
   background: #001952;
   color: #fff;
 }
+.pov-image-box {
+  position: relative;
+}
+.Blue__povImageCopy p {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: 900;
+  font-size: 14px;
+  text-align: center;
+  line-height: 14px;
+  color: #fff;
+  width: max-content;
+  position: absolute;
+}
+.Blue-pov1stCopy {
+  top: 44px;
+  right: 17%;
+}
+.Blue-pov2ndCopy {
+  top: 5px;
+  right: 11%;
+}
+.Blue-pov3rdCopy {
+  top: 45px;
+  right: 1%;
+}
 /* ----------------------------- */
 /* End custom carousal style */
 
@@ -390,6 +415,7 @@ p {
 
 .citrusBlue__feature-wrap {
   background: #f4f7ff;
+  position: relative;
 }
 .citrusBlue__feature-wrap img {
   margin: 0;
@@ -427,6 +453,35 @@ p {
   text-decoration: underline;
   text-transform: capitalize;
   text-align: center;
+}
+/* in image copy style */
+.citrusBlue__imageCopyBox {
+  position: relative;
+}
+.citrusBlue__imageCopyBox p {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+.Blue-1stCopy {
+  position: absolute;
+  top: 145px;
+  left: 40px;
+  width: max-content;
+}
+.Blue-2ndCopy {
+  position: absolute;
+  top: 90px;
+  left: 190px;
+  width: max-content;
+}
+.Blue-3rdCopy {
+  position: absolute;
+  top: 130px;
+  left: 341px;
+  width: max-content;
 }
 
 /* Product carousal section */
@@ -678,6 +733,21 @@ button {
   .citrusBlue__feature-wrap {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .Blue-1stCopy {
+    top: 26%;
+    left: 8%;
+    text-align: center;
+  }
+  .Blue-2ndCopy {
+    top: 11%;
+    left: 40%;
+    text-align: center;
+  }
+  .Blue-3rdCopy {
+    top: 26%;
+    left: 67%;
+    text-align: center;
   }
   .single-col__container--items {
     display: grid;

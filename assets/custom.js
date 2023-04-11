@@ -23,10 +23,10 @@ if (splides.length) {
           perPage: 1,
         },
         991: {
-          perPage: 2,
+          perPage: 1,
         },
         992: {
-          perPage: 2,
+          perPage: 1,
         },
         1024: {
           perPage: 2,
@@ -67,10 +67,10 @@ if (splidesPremier.length) {
           perPage: 1,
         },
         991: {
-          perPage: 2,
+          perPage: 1,
         },
         992: {
-          perPage: 2,
+          perPage: 1,
         },
         1024: {
           perPage: 2,
@@ -226,7 +226,7 @@ let direction = -1;
 
 let jump = 1;
 
-let interval = 5000;
+let interval = 5000000;
 
 let time;
 
