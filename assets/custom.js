@@ -1,90 +1,51 @@
 // classic product carousel
-var splides = document.querySelectorAll(".citrus_blue_splide-classic");
-if (splides.length) {
-  for (var i = 0; i < splides.length; i++) {
-    var splideElement = splides[i];
-    var splideDefaultOptions = {
-      type: "slide",
-      autoplay: false,
-      rewindSpeed: 500,
-      speed: 500,
-      pauseOnHover: true,
-      perPage: 2,
-      perMove: 1,
-      start: 0,
-      focus: 0,
-      pagination: false,
-      omitEnd: true,
-      breakpoints: {
-        375: {
-          perPage: 1,
-        },
-        576: {
-          perPage: 1,
-        },
-        991: {
-          perPage: 1,
-        },
-        992: {
-          perPage: 1,
-        },
-        1024: {
-          perPage: 2,
-        },
-        1200: {
-          perPage: 2,
-        },
-        1440: {
-          perPage: 2,
-        },
-      },
-    };
+featureProductScroller(".citrus_blue_splide-classic");
+featureProductScroller(".citrus_blue_splide-premier");
 
-    new Splide(splideElement, splideDefaultOptions).mount();
-  }
-}
-var splidesPremier = document.querySelectorAll(".citrus_blue_splide-premier");
-if (splidesPremier.length) {
-  for (var i = 0; i < splidesPremier.length; i++) {
-    var splideElement = splidesPremier[i];
-    var splideDefaultOptions = {
-      type: "slide",
-      autoplay: false,
-      rewindSpeed: 500,
-      speed: 500,
-      pauseOnHover: true,
-      perPage: 2,
-      perMove: 1,
-      start: 0,
-      focus: 0,
-      pagination: false,
-      omitEnd: true,
-      breakpoints: {
-        375: {
-          perPage: 1,
+function featureProductScroller(idx) {
+  var splides = document.querySelectorAll(idx);
+  if (splides.length) {
+    for (var i = 0; i < splides.length; i++) {
+      var splideElement = splides[i];
+      var splideDefaultOptions = {
+        type: "slide",
+        autoplay: false,
+        rewindSpeed: 500,
+        speed: 500,
+        pauseOnHover: true,
+        perPage: 2,
+        perMove: 1,
+        start: 0,
+        focus: 0,
+        pagination: false,
+        omitEnd: true,
+        breakpoints: {
+          375: {
+            perPage: 1,
+          },
+          576: {
+            perPage: 1,
+          },
+          991: {
+            perPage: 1,
+          },
+          992: {
+            perPage: 1,
+          },
+          1024: {
+            perPage: 2,
+          },
+          1200: {
+            perPage: 2,
+          },
+          1440: {
+            perPage: 2,
+          },
         },
-        576: {
-          perPage: 1,
-        },
-        991: {
-          perPage: 1,
-        },
-        992: {
-          perPage: 1,
-        },
-        1024: {
-          perPage: 2,
-        },
-        1200: {
-          perPage: 2,
-        },
-        1440: {
-          perPage: 2,
-        },
-      },
-    };
+      };
 
-    new Splide(splideElement, splideDefaultOptions).mount();
+      new Splide(splideElement, splideDefaultOptions).mount();
+    }
   }
 }
 /**----------------------
@@ -226,7 +187,7 @@ let direction = -1;
 
 let jump = 1;
 
-let interval = 5000000;
+let interval = 5000;
 
 let time;
 
