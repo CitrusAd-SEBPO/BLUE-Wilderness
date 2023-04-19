@@ -38,6 +38,9 @@ a {
   text-decoration: none;
   color: #000;
 }
+a:hover {
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -581,6 +584,7 @@ p {
   text-decoration: none;
   background-color: #ffffff;
   border: none;
+  border-bottom: 10px solid #fff;
   cursor: pointer;
   color: #6e6b6b;
   font-family: "PetcoCircularTT-Regular", arial !important;
@@ -596,7 +600,6 @@ button {
 .citrusBlue__tab_item.citrusBlue__active_tab {
   color: #001952;
   border-bottom: 10px solid #001952;
-  margin-top: 10px;
   border-radius: 0;
 }
 
