@@ -67,13 +67,17 @@ function advanceArrows(idx) {
     pauseOnHover: true,
     perPage: 6,
     perMove: 1,
+    gap: 20,
     omitEnd: true,
     breakpoints: {
       375: {
-        perPage: 1,
+        perPage: 1.5,
       },
       576: {
-        perPage: 1,
+        perPage: 1.75,
+      },
+      768: {
+        perPage: 2.5,
       },
       991: {
         perPage: 3,
